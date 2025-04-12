@@ -461,9 +461,9 @@ export default function Home() {
             <li>First connect Keplr wallet</li>
             <li>Generate MACI Keypair for voting</li>
             <li>Create MACI Client for contract interaction</li>
-            <li>Deploy new voting round</li>
-            <li>Register to vote (requires MACI Keypair)</li>
-            <li>Cast your vote (requires MACI Keypair)</li>
+            <li>Deploy new voting round (requires signer)</li>
+            <li>Register to vote (requires MACI Keypair and signer)</li>
+            <li>Cast your vote (requires MACI Keypair and signer)</li>
           </ol>
         </div>
       </main>
