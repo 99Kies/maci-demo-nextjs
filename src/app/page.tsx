@@ -156,6 +156,10 @@ export default function Home() {
 
   async function signup() {
     try {
+      if (!roundAddress) {
+        toast.error('Please deploy a round first');
+        return false;
+      }
       setLoading((prev) => ({ ...prev, signup: true }));
       const client = await getMaciClient();
       if (!client || !maciKeypair) return false;
@@ -214,6 +218,10 @@ export default function Home() {
 
   async function vote() {
     try {
+      if (!roundAddress) {
+        toast.error('Please deploy a round first');
+        return false;
+      }
       setLoading((prev) => ({ ...prev, vote: true }));
       const client = await getMaciClient();
       if (!client || !maciKeypair) return false;
