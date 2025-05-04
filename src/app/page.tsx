@@ -238,7 +238,6 @@ export default function Home() {
 
       const voteResponse = await client.vote({
         address,
-        stateIdx,
         contractAddress: roundAddress,
         selectedOptions: [
           { idx: 0, vc: 1 },
